@@ -1,0 +1,49 @@
+{
+  "name": "dsh-session-bridge",
+  "displayName": "DSH 会话桥",
+  "version": "0.5.0",
+  "description": "Drive DeepSeek Harness desktop sessions from Qoder: create and list sessions, deliver prompts, track tickets by stage, and read live state and cost over a loopback bridge guarded by a local bearer token.",
+  "descriptionZh": "在 Qoder 里驱动本机 DeepSeek Harness 桌面版会话：查会话与新建、投第一条消息让它在侧栏显形、按任务号记票与挪站、一次读回现场状态与成本。需要本机已装 DSH 桌面版并挂载桥插件。",
+  "author": {
+    "name": "fisherchann"
+  },
+  "homepage": "https://github.com/fisherchann/dsh-session-bridge",
+  "repository": "https://github.com/fisherchann/dsh-session-bridge",
+  "license": "MIT",
+  "keywords": [
+    "qoder-plugin",
+    "dsh",
+    "deepseek-harness",
+    "session",
+    "dispatch",
+    "multi-agent",
+    "collaboration"
+  ],
+  "category": "Workflow",
+  "tags": [
+    "dsh",
+    "session",
+    "dispatch",
+    "code-review",
+    "collaboration"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "DSH 会话桥",
+    "shortDescription": "把任务派给本机 DSH 桌面版会话，并读回它的现场状态",
+    "longDescription": "在 Qoder 里驱动本机 DeepSeek Harness 桌面版：先查工作区已有会话再决定复用还是新建，投第一条消息让会话在侧栏显形，按任务号记票、复核汇报、挪站与人工结单，一次调用读回所有在册任务的运行状态、等待类型与成本。投递前强制核对会话权限档，只走 loopback 加本地 bearer token。前置条件是本机已安装 DSH 桌面版并挂载 dsh-session-bridge 宿主插件。",
+    "developerName": "fisherchann",
+    "category": "Workflow",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "在 DSH 里开个会话，用代码审查模式看这个仓库",
+      "把这个任务派给 DSH 做，记票并盯着状态",
+      "查 DSH 那边跑到哪了，能验收就带结论结单"
+    ],
+    "brandColor": "#4D6BFE",
+    "screenshots": []
+  }
+}

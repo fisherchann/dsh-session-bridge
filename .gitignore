@@ -1,0 +1,22 @@
+# 由 dsh-ledger-memory 追加
+.bak-20261105/
+node_modules/
+*.log
+
+# 本机记账与过程稿：留在磁盘上供协作使用，不进公开仓
+.dsh-ledger.json
+LEDGER.md
+DECISIONS.md
+GOALS.md
+JOURNAL.md
+LESSONS.md
+_ledger-log/
+_ledger-archive/
+_stash/
+# 任务书文件名带日期
+*-20[0-9][0-9][0-9][0-9][0-9][0-9].md
+
+# 打包产物与备份
+dist/
+*.zip
+*.bak-*/

@@ -1,0 +1,8 @@
+# dsh-session-bridge bundle patch: inserts the host plugin row into the profile
+# roster. The row runs in the host process and registers two exact routes on the
+# existing Web server:
+#   POST /x-session-bridge/new     create a session (Bearer token)
+#   GET  /x-session-bridge/health  liveness, no token
+- insert:
+    - id: session-bridge
+      name: 'dsh-session-bridge'
